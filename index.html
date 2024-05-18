@@ -24,58 +24,15 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: #333;
-        }
         p {
             color: #666;
             line-height: 1.6;
-        }
-        #countdown {
-            font-size: 24px;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <p>Dear Tanisha,</p>
-        <p>I sincerely apologize for any troubles or inconvenience I may have caused you. My actions were not intentional, and I deeply regret any hurt or discomfort they may have caused. Please know that I value our relationship and I am committed to making things right.</p>
         <p>The timer might be over and also the website might go offline too, but we are not.</p>
-        <p>Thank you for your understanding and forgiveness.</p>
-        <p>Sincerely,<br>Chaitanya</p>
-        <div id="countdown"></div>
     </div>
-
-    <script>
-        // Set the date to count down to
-        var countDownDate = new Date('2024-05-16').getTime();
-
-        // Update the countdown every second
-        var x = setInterval(function() {
-
-            // Get the current date and time
-            var now = new Date().getTime();
-
-            // Calculate the remaining time
-            var distance = countDownDate - now;
-
-            // Calculate days, hours, minutes, and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the countdown
-            document.getElementById('countdown').innerHTML = "Time remaining (mhtcet): " + days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-            // If the countdown is over, display a message
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById('countdown').innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
 </body>
 </html>
