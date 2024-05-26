@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('tulip.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding-top: 50px;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <p>The timer might be over and also the website might go offline too, but we are not.</p>
+    <div class="container" id="container">
+        <div class="glow-box" id="glow-box">
+            <div class="cards-container" id="cards-container">
+                <!-- Cards will be inserted here by JavaScript -->
+            </div>
+            <div class="message" id="message">
+                <p>Happy Birthday Tanisha!</p>
+                <button id="reveal-button">Click here</button>
+            </div>
+            <div class="hidden-message" id="hidden-message">
+                <p class="birthday-message">Happy birthday, my dear friend, or should I call you something else? Thank you for coming into my life; the day we met, I still remember it, and I am sure I always will. Your first prank call to me and every moment will stay with me. But I want to make more memories with you—photos, videos, and all. Happy birthday again, Tulip, from Chaitanya.</p>
+            </div>
+        </div>
     </div>
+    <audio id="birthday-audio" src="happy-birthday.mp3"></audio>
+    <script src="script.js"></script>
 </body>
 </html>
